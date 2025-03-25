@@ -34,7 +34,7 @@ Users should be able to:
 
 ## My process
 
-I started by structuring the HTML using semantic elements: a <header> containing the main navigation, followed by three <section> elements for the body content, and a <footer> to wrap up the layout. I used CSS with a combination of Flexbox and Grid to style the page and ensure it was fully responsive across mobile and desktop views. For interactivity, I wrote vanilla JavaScript to handle the mobile menu functionality, including toggling the navigation and animating the hamburger icon into an "X" when clicked.
+I started by structuring the HTML using semantic elements: a header containing the main navigation, followed by three section elements for the body content, and a footer to wrap up the layout. I used CSS with a combination of Flexbox and Grid to style the page and ensure it was fully responsive across mobile and desktop views. For interactivity, I wrote vanilla JavaScript to handle the mobile menu functionality, including toggling the navigation and animating the hamburger icon into an "X" when clicked.
 
 ### Built with
 
@@ -95,3 +95,4 @@ For continued development, I'll be diving deeper into JavaScript by learning how
 
 ## Acknowledgments
 
+Big thanks to Frontend Mentor for providing this challenge and helping developers grow through hands-on practice. I also appreciate the feedback and support from the community!
