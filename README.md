@@ -1,7 +1,5 @@
 # Frontend Mentor - Easybank landing page solution
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -27,20 +25,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![](./design/Frontend-Mentor-Easybank-landing-page-Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/EAguayodev/easybank-landing-page)
+- Live Site URL: [Vercel](https://easybank-landing-page-mu-one.vercel.app/)
 
 ## My process
+
+I started by structuring the HTML using semantic elements: a <header> containing the main navigation, followed by three <section> elements for the body content, and a <footer> to wrap up the layout. I used CSS with a combination of Flexbox and Grid to style the page and ensure it was fully responsive across mobile and desktop views. For interactivity, I wrote vanilla JavaScript to handle the mobile menu functionality, including toggling the navigation and animating the hamburger icon into an "X" when clicked.
 
 ### Built with
 
@@ -48,49 +42,56 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Vanilla JavaScript
 - Desktop-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Through this project, I learned how to effectively combine both Flexbox and CSS Grid to build a responsive layout that adapts across screen sizes. I also wrote 7 lines of JavaScript to toggle the mobile navigation menu, allowing it to display and close when clicked. Additionally, I learned how to animate the hamburger menu icon into an "X" when the user interacts with it, improving the overall user experience on smaller devices.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <button class="ham" id="hamburger">
+    <span class="bar top"></span>
+    <span class="bar middle"></span>
+    <span class="bar bottom"></span>
+  </button>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.top,
+  .middle,
+  .bottom {
+    height: 5px;
+    width: 35px;
+    background-color: #000;
+    transition: 0.4s;
+    margin: 3px 0;
+  }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener('click', function(){
+    hamburger.classList.toggle('show');
+    navMenu.classList.toggle('show');
+})
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For continued development, I'll be diving deeper into JavaScript by learning how to interact with APIs. This will help me build more dynamic and data-driven web projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [w3schools](https://www.w3schools.com/howto/howto_css_menu_icon.asp) - For the hamburger menu animation, I referred to W3Schools documentation to understand how to transform the icon into an "X" using CSS transitions and rotations.
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) - I also used Mozilla’s CSS documentation to get a better grasp of how background-position works, which helped me place the background image accurately in the design across different screen sizes.
 
 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/EAguayodev)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
